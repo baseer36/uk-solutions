@@ -331,11 +331,35 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 .wa-float{position:fixed;right:18px;bottom:18px;z-index:60;display:grid;place-items:center;width:54px;height:54px;border-radius:50%;background:#25d366;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.45);transition:transform .18s}
 .wa-float:hover{transform:scale(1.07)}
 @media (max-width:760px){.hnav{display:none}}
+
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;max-width:900px;margin-inline:auto}
+.plan{position:relative;display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px 24px}
+.plan.hot{border-color:var(--coral);background:linear-gradient(180deg,rgba(255,107,74,.09),var(--surface) 60%)}
+.plan .tag{position:absolute;top:-12px;left:24px;background:var(--grad-accent);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:var(--pill)}
+.plan h3{font-size:1.1rem;font-weight:700}
+.plan .sub2{margin-top:6px;font-size:.84rem;color:var(--muted);line-height:1.55}
+.plan .price{margin-top:18px;font-size:2.1rem;font-weight:800;letter-spacing:-.02em;line-height:1}
+.plan .price small{font-size:.8rem;font-weight:500;color:var(--faint);letter-spacing:0}
+.plan ul{margin:20px 0 24px;display:grid;gap:9px}
+.plan li{position:relative;padding-left:22px;font-size:.86rem;color:var(--muted);line-height:1.5}
+.plan li::before{content:"";position:absolute;left:0;top:.35em;width:12px;height:7px;border-left:2px solid var(--coral);border-bottom:2px solid var(--coral);transform:rotate(-45deg)}
+.plan .btn{margin-top:auto;justify-content:center}
+.dsub{max-width:900px;margin:56px auto 20px;text-align:center}
+.dsub h3{font-size:1.35rem;font-weight:700}
+.dsub p{margin-top:8px;color:var(--muted);font-size:.9rem}
+.plist{max-width:900px;margin-inline:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:12px}
+.pitem{display:flex;justify-content:space-between;align-items:center;gap:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px 18px}
+.pitem b{display:block;font-size:.92rem;font-weight:600}
+.pitem span{display:block;margin-top:3px;font-size:.78rem;color:var(--faint);line-height:1.45}
+.pitem em{font-style:normal;white-space:nowrap;text-align:right;font-weight:700;font-size:.95rem;color:var(--gold)}
+.pitem em small{display:block;font-size:.66rem;font-weight:500;color:var(--faint);letter-spacing:.05em;text-transform:uppercase}
+.pnote{max-width:900px;margin:22px auto 0;text-align:center;font-size:.8rem;color:var(--faint);line-height:1.6}
+@media (max-width:480px){.plist{grid-template-columns:1fr}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What kind of websites do you build?","acceptedAnswer":{"@type":"Answer","text":"Business, institutional and e-commerce websites, hand-built rather than assembled in a page builder, in English, Urdu, Arabic, or all three on one domain. Technical SEO is part of every build."}},{"@type":"Question","name":"Do you handle right-to-left languages properly?","acceptedAnswer":{"@type":"Answer","text":"Yes. Urdu and Arabic sites get true right-to-left layout, mirrored components and proper typefaces (Nastaliq and Naskh), plus hreflang so search engines serve the right language to the right visitor."}},{"@type":"Question","name":"How do we get started?","acceptedAnswer":{"@type":"Answer","text":"Send the business name, the languages it needs and roughly when you want it live, on WhatsApp or by email. I reply with what it takes and what it costs. No call is required."}},{"@type":"Question","name":"Do you take care of the domain and hosting?","acceptedAnswer":{"@type":"Answer","text":"Yes. I set up the domain, hosting, SSL and Search Console, and stay with the site through the first weeks of indexing, so it is live and being found, not just handed over."}},{"@type":"Question","name":"Can you guarantee Google rankings?","acceptedAnswer":{"@type":"Answer","text":"No one honestly can. What I do is build the technical foundation, research keywords in your real market, and measure results in Search Console so you can see what is working."}},{"@type":"Question","name":"Which markets do you work in?","acceptedAnswer":{"@type":"Answer","text":"Pakistan, the UAE and Gulf, the UK and the United States."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a website cost?","acceptedAnswer":{"@type":"Answer","text":"A website costs Rs 12,000. A website with a complete SEO setup costs Rs 20,000. Graphic design starts from Rs 1,200 per design, and the full price list is in the pricing section. I confirm the total before we start."}},{"@type":"Question","name":"What kind of websites do you build?","acceptedAnswer":{"@type":"Answer","text":"Business, institutional and e-commerce websites, hand-built rather than assembled in a page builder, in English, Urdu, Arabic, or all three on one domain. Technical SEO is part of every build."}},{"@type":"Question","name":"Do you handle right-to-left languages properly?","acceptedAnswer":{"@type":"Answer","text":"Yes. Urdu and Arabic sites get true right-to-left layout, mirrored components and proper typefaces (Nastaliq and Naskh), plus hreflang so search engines serve the right language to the right visitor."}},{"@type":"Question","name":"How do we get started?","acceptedAnswer":{"@type":"Answer","text":"Send the business name, the languages it needs and roughly when you want it live, on WhatsApp or by email. I reply with what it takes and what it costs. No call is required."}},{"@type":"Question","name":"Do you take care of the domain and hosting?","acceptedAnswer":{"@type":"Answer","text":"Yes. I set up the domain, hosting, SSL and Search Console, and stay with the site through the first weeks of indexing, so it is live and being found, not just handed over."}},{"@type":"Question","name":"Can you guarantee Google rankings?","acceptedAnswer":{"@type":"Answer","text":"No one honestly can. What I do is build the technical foundation, research keywords in your real market, and measure results in Search Console so you can see what is working."}},{"@type":"Question","name":"Which markets do you work in?","acceptedAnswer":{"@type":"Answer","text":"Pakistan, the UAE and Gulf, the UK and the United States."}}]}</script>
 </head>
 <body id="top">
-<header class="site-header"><div class="wrap hbar"><a class="logo" href="#top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgBAMAAAAQtmoLAAAAElBMVEX///////7+//6l0I9Fnhk8mQ6+tbdXAAAD2ElEQVR42s1XwY7bNhB9nHXR9aGWZAcotkBombsF2luSbf//BzZu0cP2JJrLAkEvkWgfCl9K5iBTJGVZK/dQRBcLkp7nvZk35BD4qi8qrwSUJK4LcFPidcRNuN0s38+fRTMdkK3Y3e2zyMwoYBZRyt1eYEulmhaB2E9HHH+4s3ptpkUwANAsATWNEp95BNkRCIXbov1pyE6KQPpH194t9BgiRGDZpPIGDczfNN5XcjSt69XtCfj5WwPiu6YZrHqIkMePuf4la7bE1cUItP/ZA9UOtH/czIv5p8N5DbsILD+9cwooad0AIq/0mU88IF/Gmu3K+KoLOUzp+xWCZs/vSEX2Z0/6bDDZnp+jB9qKxCkzX+eH0wNnAGz863PDz/qaM23Biy45zgj2OZY+S6w6dBmRx9JPovOuzv9YE2rSSl/OI+ldWk9WRR3z84aPpLcAOvjWdwZY3/RYxdJPEfbd0qEtXKeZuTPpsyHNHT9LPrIROXTUQEVkDNK+ldi/cu9N3CzvedkByD9mNY9aCftKqg5B99qnlfbvjj6rR9O1EvBpKf+e3x19C3x3a/peyioV8cu0XS62XWu55R8nSnzjNTsFRnnUhbXmTyZeiOhMM3vpNDcLwBLl/WUmSkvN45c1ALIfOgCzpzokVgg1cQYAvynDS+ZaSgXiTyLNCqRF+N6xNgL/xoS00OEhLiJ/E20wzotOVO3jIvK/NhEhyQFKNDdJnQHSH6IlIDuczBc01wm/SvPZOg6gbLI/nDR3/JxKCdktbyMs3kRWCMsHGuhHFxF6ErIF5DADSxJY3SPU7jPUM0ZYkgA6J5RqYDXHumvP7PCSxTYW6nyppLY2XnOUYE+olyWAKEt2rj6hFtAl0lL5EupcDhBKKbnV7/g1WJUGCLUA01njEevgw2ASuw2rcdrTAoPjUhVtQykgfM6arFsN83g0oF4+QntGReBlAjBpP0Q+jOeiCHDYDQTItLo8nLiB3acpL08zlu/Pt9Hajow/dK7aHcbGH8Xe9UllKorA+hHs25c+oypZAfP+RKa3vcRmh/ERzr5VeSpZqfGZT2+TRC0kf2VItFxGyoqdVq9NlbqSzLMq6t/4q2OoFZU0BQCwoq7GxnVvbymq3fuiABr5cXQ07vpBCvlRFHC1osW06V5SKQFASDPxwGGlAGAH5uF4R0taVF76WzV4HBhJJbsSgCsB7sIJZeLx8OsA5FMBbKCpRwAu27GrKLn6KTTJK8cBf4KvIHIzHWClqFBsmskAQIqKkCLGAZDEt2Hj753Yh5Uf+DO7Ve6a0grcX+kHca19/gPif72+AJhcf8MijtRuAAAAAElFTkSuQmCC" alt="UK Solutions logo" width="34" height="34"><span>UK Solutions</span></a><nav class="hnav" aria-label="Main"><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav><a class="btn btn-solid btn-sm" href="https://wa.me/923493388609?text=Hi%20Abdul%2C%20I%20saw%20your%20portfolio%20and%20want%20a%20website." target="_blank" rel="noopener">WhatsApp</a></div></header>
+<header class="site-header"><div class="wrap hbar"><a class="logo" href="#top"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgBAMAAAAQtmoLAAAAElBMVEX///////7+//6l0I9Fnhk8mQ6+tbdXAAAD2ElEQVR42s1XwY7bNhB9nHXR9aGWZAcotkBombsF2luSbf//BzZu0cP2JJrLAkEvkWgfCl9K5iBTJGVZK/dQRBcLkp7nvZk35BD4qi8qrwSUJK4LcFPidcRNuN0s38+fRTMdkK3Y3e2zyMwoYBZRyt1eYEulmhaB2E9HHH+4s3ptpkUwANAsATWNEp95BNkRCIXbov1pyE6KQPpH194t9BgiRGDZpPIGDczfNN5XcjSt69XtCfj5WwPiu6YZrHqIkMePuf4la7bE1cUItP/ZA9UOtH/czIv5p8N5DbsILD+9cwooad0AIq/0mU88IF/Gmu3K+KoLOUzp+xWCZs/vSEX2Z0/6bDDZnp+jB9qKxCkzX+eH0wNnAGz863PDz/qaM23Biy45zgj2OZY+S6w6dBmRx9JPovOuzv9YE2rSSl/OI+ldWk9WRR3z84aPpLcAOvjWdwZY3/RYxdJPEfbd0qEtXKeZuTPpsyHNHT9LPrIROXTUQEVkDNK+ldi/cu9N3CzvedkByD9mNY9aCftKqg5B99qnlfbvjj6rR9O1EvBpKf+e3x19C3x3a/peyioV8cu0XS62XWu55R8nSnzjNTsFRnnUhbXmTyZeiOhMM3vpNDcLwBLl/WUmSkvN45c1ALIfOgCzpzokVgg1cQYAvynDS+ZaSgXiTyLNCqRF+N6xNgL/xoS00OEhLiJ/E20wzotOVO3jIvK/NhEhyQFKNDdJnQHSH6IlIDuczBc01wm/SvPZOg6gbLI/nDR3/JxKCdktbyMs3kRWCMsHGuhHFxF6ErIF5DADSxJY3SPU7jPUM0ZYkgA6J5RqYDXHumvP7PCSxTYW6nyppLY2XnOUYE+olyWAKEt2rj6hFtAl0lL5EupcDhBKKbnV7/g1WJUGCLUA01njEevgw2ASuw2rcdrTAoPjUhVtQykgfM6arFsN83g0oF4+QntGReBlAjBpP0Q+jOeiCHDYDQTItLo8nLiB3acpL08zlu/Pt9Hajow/dK7aHcbGH8Xe9UllKorA+hHs25c+oypZAfP+RKa3vcRmh/ERzr5VeSpZqfGZT2+TRC0kf2VItFxGyoqdVq9NlbqSzLMq6t/4q2OoFZU0BQCwoq7GxnVvbymq3fuiABr5cXQ07vpBCvlRFHC1osW06V5SKQFASDPxwGGlAGAH5uF4R0taVF76WzV4HBhJJbsSgCsB7sIJZeLx8OsA5FMBbKCpRwAu27GrKLn6KTTJK8cBf4KvIHIzHWClqFBsmskAQIqKkCLGAZDEt2Hj753Yh5Uf+DO7Ve6a0grcX+kHca19/gPif72+AJhcf8MijtRuAAAAAElFTkSuQmCC" alt="UK Solutions logo" width="34" height="34"><span>UK Solutions</span></a><nav class="hnav" aria-label="Main"><a href="#work">Work</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#process">Process</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav><a class="btn btn-solid btn-sm" href="https://wa.me/923493388609?text=Hi%20Abdul%2C%20I%20saw%20your%20portfolio%20and%20want%20a%20website." target="_blank" rel="noopener">WhatsApp</a></div></header>
 <section class="hero">
 <div class="wrap">
 <div class="hero-grid">
@@ -542,12 +566,43 @@ than a folder of screenshots.
 <ul class="points"><li>Logo + favicons</li><li>Colour &amp; type system</li><li>Social templates</li></ul>
 </li>
 <li class="tile">
+<span class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18z"/><path d="M2 2l7.6 7.6"/></svg></span>
+<h3>Graphic design</h3>
+<p>Logos, flyers, banners, posters and social media posts, in English, Urdu and Arabic.</p>
+<ul class="points"><li>Logos and branding</li><li>Flyers, banners, posters</li><li>Social posts and institutional material</li></ul>
+</li>
+<li class="tile">
 <span class="svc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16l-1.5 11H5.5z"/><path d="M9 7V5a3 3 0 016 0v2"/></svg></span>
 <h3>E-commerce</h3>
 <p>Product catalogue, enquiry or checkout flow, and listing copy that reads like a person wrote it.</p>
 <ul class="points"><li>Catalogue structure</li><li>Checkout or enquiry</li><li>Product copy</li></ul>
 </li>
 </ul>
+</div>
+</section>
+<section class="band" id="pricing">
+<div class="wrap">
+<div class="head"><p class="eyebrow">Pricing</p><h2>Clear prices, <span class="accent">no surprises</span></h2><p class="sub">Fixed package prices in Pakistani rupees. Tell me what you need and I confirm the total before we start.</p></div>
+<div class="plans">
+<div class="plan"><h3>Website</h3><p class="sub2">A fast, hand-built website, ready to launch.</p><div class="price">Rs 12,000 <small>/ project</small></div>
+<ul><li>Mobile-first, hand-built design</li><li>English, Urdu or Arabic, with right-to-left layouts</li><li>WhatsApp button and contact options</li><li>Private preview link, revisions until you are happy</li><li>Launch on your domain, you own the code</li></ul>
+<a class="btn btn-ghost" href="https://wa.me/923493388609?text=Hi%20Abdul%2C%20I%20want%20the%20Website%20package%20(Rs%2012%2C000)." target="_blank" rel="noopener">Get this package</a></div>
+<div class="plan hot"><span class="tag">Most popular</span><h3>Website + Complete SEO</h3><p class="sub2">Everything in Website, with a full 10/10 SEO setup built in from day one.</p><div class="price">Rs 20,000 <small>/ project</small></div>
+<ul><li>Everything in the Website package</li><li>Keyword research for your real market</li><li>On-page SEO on every page</li><li>Technical SEO: schema, sitemap, canonicals, speed</li><li>Search Console set up and submitted</li><li>FAQ markup so AI search can cite you</li></ul>
+<a class="btn btn-solid" href="https://wa.me/923493388609?text=Hi%20Abdul%2C%20I%20want%20the%20Website%20%2B%20Complete%20SEO%20package%20(Rs%2020%2C000)." target="_blank" rel="noopener">Get this package</a></div>
+</div>
+<div class="dsub"><h3>Graphic design services</h3><p>Logos, branding and print or social media designs, in English, Urdu and Arabic.</p></div>
+<div class="plist">
+<div class="pitem"><div><b>Logo design</b><span>Original logo, print and web files included, revisions until you are happy</span></div><em><small>from</small>Rs 8,000</em></div>
+<div class="pitem"><div><b>Brand identity kit</b><span>Logo, colour palette, fonts, social profile and cover images</span></div><em><small>from</small>Rs 16,000</em></div>
+<div class="pitem"><div><b>Social media posts</b><span>Pack of 10 designs in English, Urdu or Arabic</span></div><em><small>from</small>Rs 4,800</em></div>
+<div class="pitem"><div><b>Flyer or poster</b><span>One print-ready design, Urdu Nastaliq typography available</span></div><em><small>from</small>Rs 2,000</em></div>
+<div class="pitem"><div><b>Banner or cover image</b><span>Facebook, YouTube or shop banner, sized for the platform</span></div><em><small>from</small>Rs 1,600</em></div>
+<div class="pitem"><div><b>Brochure or company profile</b><span>Up to 4 pages, print-ready</span></div><em><small>from</small>Rs 6,400</em></div>
+<div class="pitem"><div><b>Visiting card and letterhead</b><span>Matching set, print-ready</span></div><em><small>from</small>Rs 2,400</em></div>
+<div class="pitem"><div><b>Certificates, forms, institutional material</b><span>Educational and institutional designs, price per design</span></div><em><small>from</small>Rs 1,200</em></div>
+</div>
+<p class="pnote">Design prices are starting prices and depend on scope. Nobody can honestly guarantee a Google ranking, so the SEO package covers the complete setup and I track results with you in Search Console.</p>
 </div>
 </section>
 <section class="band" id="process">
@@ -564,6 +619,7 @@ than a folder of screenshots.
 <div class="wrap">
 <div class="head"><p class="eyebrow">FAQ</p><h2>Questions <span class="accent">clients ask</span></h2></div>
 <div class="faq">
+<details><summary>How much does a website cost?</summary><p>A website costs Rs 12,000. A website with a complete SEO setup costs Rs 20,000. Graphic design starts from Rs 1,200 per design, and the full price list is in the pricing section. I confirm the total before we start.</p></details>
 <details><summary>What kind of websites do you build?</summary><p>Business, institutional and e-commerce websites, hand-built rather than assembled in a page builder, in English, Urdu, Arabic, or all three on one domain. Technical SEO is part of every build.</p></details>
 <details><summary>Do you handle right-to-left languages properly?</summary><p>Yes. Urdu and Arabic sites get true right-to-left layout, mirrored components and proper typefaces (Nastaliq and Naskh), plus hreflang so search engines serve the right language to the right visitor.</p></details>
 <details><summary>How do we get started?</summary><p>Send the business name, the languages it needs and roughly when you want it live, on WhatsApp or by email. I reply with what it takes and what it costs. No call is required.</p></details>
@@ -609,7 +665,7 @@ I will reply with what it takes and what it costs — no call required.
 <p class="fline">Abdul Baseer · Karachi, Pakistan</p>
 </div>
 <nav class="fnav" aria-label="Footer">
-<a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+<a href="#work">Work</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#process">Process</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
 </nav>
 </div>
 <div class="fbase"><p>© 2026 UK Solutions. All rights reserved.</p></div>
